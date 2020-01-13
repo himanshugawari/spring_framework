@@ -1,12 +1,23 @@
-package com.gawari._himanshu.springin5steps;
+package com.gawari._himanshu.springin5steps.basic;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//default is singleton.  prototype is hardcoded.
+//@Scope("prototype")
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class BinarySearchImpl {
 
+	private Logger LOGGER = LoggerFactory.getLogger(this.getClass());
+
+	// Field Injection
 	// @Autowired
+	// @Qualifier("bubble")
 	SortAlgorithmn sortAlgorithmn;
 
 	// Constructor Injection
@@ -30,4 +41,9 @@ public class BinarySearchImpl {
 		return 3;
 	}
 
+	/*
+	 * @PostConstruct public void postConstrct() { LOGGER.info("postConstruct"); }
+	 * 
+	 * @PreDestroy public void preDestroy() { LOGGER.info("preDestroy"); }
+	 */
 }
