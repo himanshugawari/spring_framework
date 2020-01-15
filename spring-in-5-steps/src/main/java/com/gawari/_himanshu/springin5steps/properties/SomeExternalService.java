@@ -1,9 +1,9 @@
 package com.gawari._himanshu.springin5steps.properties;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class SomeExternalService {
 
 	// Value set from Property File -> external.service.url
