@@ -29,11 +29,33 @@ public class UserAccessAspect {
 	 * ) public void before(JoinPoint joinPoint) { // what to do?
 	 * logger.info("Intercepted Methods Calls -> {}", joinPoint); }
 	 */
+
+	// JoinPoint
+	/*
+	 * @Before("execution(* com.gawari._himanshu.spring.aop.springaop.business.*.*(..))"
+	 * ) public void before(JoinPoint joinPoint) { // what to do?
+	 * logger.info("Check for user access ");
+	 * logger.info("Allowed execution for -> {}", joinPoint); }
+	 */
+
+	//Weaving & Weaver
+	//Process of implementing aop around methods is called Weaving
+	//and the framework which implements it is called Weaver
 	
-	@Before("execution(* com.gawari._himanshu.spring.aop.springaop.business.*.*(..))")
+	//Combination of pointcut and advice is called an aspect
+	
+	//PointCut  "execution(* com.gawari._himanshu.spring.aop.springaop..*.*(..))"
+	//Advice  logger.info("Allowed execution for method {} -> {}", countMethods, joinPoint)
+	public int countMethods = 1;
+
+	//PointCut
+	@Before("execution(* com.gawari._himanshu.spring.aop.springaop..*.*(..))")
 	public void before(JoinPoint joinPoint) {
 		// what to do?
+		//Advice
 		logger.info("Check for user access ");
-		logger.info("Allowed execution for -> {}", joinPoint);
+		logger.info("Allowed execution for method {} -> {}", countMethods, joinPoint);
+		countMethods++;
 	}
+
 }
