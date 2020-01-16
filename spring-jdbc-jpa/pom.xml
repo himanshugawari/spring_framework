@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.gawari._himanshu.database</groupId>
-	<artifactId>spring-jdbc-jpa</artifactId>
+	<artifactId>spring-jdbc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-jdbc</name>
 	<description>Demo project for Spring Boot</description>

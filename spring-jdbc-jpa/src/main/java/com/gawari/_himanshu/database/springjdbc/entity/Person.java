@@ -1,4 +1,4 @@
-package com.gawari._himanshu.database.springjdbcjpa.entity;
+package com.gawari._himanshu.database.springjdbc.entity;
 
 import java.util.Date;
 

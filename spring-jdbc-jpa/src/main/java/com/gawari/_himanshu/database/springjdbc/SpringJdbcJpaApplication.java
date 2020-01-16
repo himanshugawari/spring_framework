@@ -1,4 +1,4 @@
-package com.gawari._himanshu.database.springjdbcjpa;
+package com.gawari._himanshu.database.springjdbc;
 
 import java.util.Date;
 
@@ -9,8 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.gawari._himanshu.database.springjdbcjpa.entity.Person;
-import com.gawari._himanshu.database.springjdbcjpa.jdbc.PersonJdbcDAO;
+import com.gawari._himanshu.database.springjdbc.entity.Person;
+import com.gawari._himanshu.database.springjdbc.jdbc.PersonJdbcDAO;
 
 @SpringBootApplication
 public class SpringJdbcJpaApplication implements CommandLineRunner {

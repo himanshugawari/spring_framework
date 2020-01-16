@@ -1,4 +1,4 @@
-package com.gawari._himanshu.database.springjdbcjpa.jdbc;
+package com.gawari._himanshu.database.springjdbc.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.gawari._himanshu.database.springjdbcjpa.entity.Person;
+import com.gawari._himanshu.database.springjdbc.entity.Person;
 
 @Repository
 public class PersonJdbcDAO {
