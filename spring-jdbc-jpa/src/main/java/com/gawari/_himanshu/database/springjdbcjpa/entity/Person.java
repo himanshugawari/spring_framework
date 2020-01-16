@@ -2,6 +2,7 @@ package com.gawari._himanshu.database.springjdbcjpa.entity;
 
 import java.util.Date;
 
+//spring jdbc implmentation
 public class Person {
 
 	private int id;
